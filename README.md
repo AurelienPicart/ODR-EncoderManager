@@ -1,4 +1,4 @@
-# ODR-EncoderManager for ODR-Tools_Installer ( supervisor config odr/odr port 8001 ) 
+# ODR-EncoderManager for ODR-Tools_Installer ( Supervisor config odr/odr port 8001 ) 
 OpenDigitalRadio Encoder Manager is a tools to run and configure ODR Encoder easly with a WebGUI.
 
 # Note about version V5.0.0
