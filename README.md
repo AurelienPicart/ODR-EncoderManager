@@ -24,10 +24,11 @@ OpenDigitalRadio Encoder Manager is a tools to run and configure ODR Encoder eas
 
 # INSTALLATION
 
-  * git clone https://github.com/DABodr/ODR-EncoderManager
-  * cd ODR-EncoderManager
+  * wget https://github.com/DABodr/ODR-EncoderManager/blob/master/EncoderManager-install.sh
   * chmod +x ./EncoderManager-install.sh
   * ./EncoderManager-install.sh
+  
+  After installation:
   * Go to : `http://<ip_address>:8080`
   * Login with user `joe` and password `secret` 
 
