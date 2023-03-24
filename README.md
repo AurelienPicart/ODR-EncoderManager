@@ -24,7 +24,8 @@ OpenDigitalRadio Encoder Manager is a tools to run and configure ODR Encoder eas
 
 # INSTALLATION
 
-  * wget https://github.com/DABodr/ODR-EncoderManager/blob/master/EncoderManager-install.sh
+  * git clone https://github.com/DABodr/ODR-EncoderManager
+  * cd ODR-EncoderManager
   * chmod +x ./EncoderManager-install.sh
   * ./EncoderManager-install.sh
   
