@@ -1,4 +1,4 @@
-# ODR-EncoderManager
+# ODR-EncoderManager for ODR-Tools_Installer ( supervisor config odr/odr port 8001 ) 
 OpenDigitalRadio Encoder Manager is a tools to run and configure ODR Encoder easly with a WebGUI.
 
 # Note about version V5.0.0
@@ -24,24 +24,10 @@ OpenDigitalRadio Encoder Manager is a tools to run and configure ODR Encoder eas
 
 # INSTALLATION
 
-  * (root) Install requirement (debian/stretch) : `apt install python3-cherrypy3 python3-jinja2 python3-serial python3-yaml supervisor python3-pysnmp4`
-  * (root) Add odr user : `adduser odr`
-  * (root) Add odr user to dialout group : `usermod -a -G dialout odr`
-  * (root) Add odr user to audio group : `usermod -a -G audio odr`
-  * (user) Got to odr user home : `cd /home/odr/`
-  * (user) Clone git repository : `git clone https://github.com/YoannQueret/ODR-EncoderManager.git`
-  * (user) Rename sample config : `mv /home/odr/ODR-EncoderManager/config.json.sample /home/odr/ODR-EncoderManager/config.json`
-  * (root) Make the symlink: `ln -s /home/odr/ODR-EncoderManager/supervisor-encoder.conf /etc/supervisor/conf.d/odr-encoder.conf`
-  * (root) Make the symlink: `ln -s /home/odr/ODR-EncoderManager/supervisor-gui.conf /etc/supervisor/conf.d/odr-gui.conf`
-  * (root) Edit `/etc/supervisor/supervisord.conf` and add this section :
-```
-[inet_http_server]
-port = 8900
-username = user ; Auth username
-password = pass ; Auth password
-```
-  * (root) Restart supervisor : `/etc/init.d/supervisor restart`
-  * (root) Start WEB server : `supervisorctl reread; supervisorctl update ODR-encoderManager`
+  * git clone https://github.com/DABodr/ODR-EncoderManager
+  * cd ODR-EncoderManager
+  * chmod +x ./EncoderManager-install.sh
+  * ./EncoderManager-install.sh
   * Go to : `http://<ip_address>:8080`
   * Login with user `joe` and password `secret` 
 
