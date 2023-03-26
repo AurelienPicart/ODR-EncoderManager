@@ -82,7 +82,7 @@
     }],
     "global": {
         "daemon": false,
-        "max_encoder_instance": 3,
+        "max_encoder_instance": 10,
         "logs_directory": "/home/odr/ODR-EncoderManager/logs/",
         "supervisor_xmlrpc": "http://odr:odr@127.0.0.1:8001/RPC2",
         "static_directory": "/home/odr/ODR-EncoderManager/static/",
